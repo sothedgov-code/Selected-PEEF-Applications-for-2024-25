@@ -83,20 +83,22 @@
       <th>Father Name</th>
       <th>Domicile</th>
       <th>Category</th>
-      </tr>
+    </tr>
   </thead>
   <tbody id="tableBody"></tbody>
 </table>
 
 <script>
 let data = [];
-fetch('data1.csv')
+
+// Fetch and parse CSV
+fetch('data.csv')
   .then(response => response.text())
   .then(text => {
     const lines = text.trim().split('\n');
     for (let i = 1; i < lines.length; i++) {
-      const [serial, name, gender, father-name, domicile, category] = lines[i].split(',');
-      data.push({ serial, name, gender, father-name, domicile, category });
+      const [serial, name, gender, fatherName, domicile, category] = lines[i].split(',');
+      data.push({ serial, name, gender, fatherName, domicile, category });
     }
   });
 
@@ -106,7 +108,7 @@ const table = document.getElementById('dataTable');
 const tableBody = document.getElementById('tableBody');
 
 searchInput.addEventListener('input', function() {
-  const query = this.value.toLowerCase();
+  const query = this.value.toLowerCase().trim();
   suggestions.innerHTML = '';
   if (!query) { suggestions.style.display = 'none'; return; }
 
@@ -130,13 +132,14 @@ function showRecord(item) {
       <td>${item.serial}</td>
       <td>${item.name}</td>
       <td>${item.gender}</td>
-      <td>${item.father-name}</td>
+      <td>${item.fatherName}</td>
       <td>${item.domicile}</td>
       <td>${item.category}</td>
     </tr>`;
   table.style.display = 'table';
 }
 
+// Disable PrintScreen, copy, and selection
 document.addEventListener('keydown', function(e) {
   if (e.key === 'PrintScreen') {
     alert('Screenshots are disabled on this page.');
