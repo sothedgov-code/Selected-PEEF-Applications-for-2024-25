@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PEEF Requisite Record Finder</title>
+<title>PEEF Recommended Applications</title>
 <style>
   body {
     font-family: Tahoma;
@@ -70,7 +70,7 @@
 </head>
 <body oncontextmenu="return false">
 
-<h2>PEEF Eligible List for the Year 2024-25</h2>
+<h2>PEEF Recommended List for 2024-25</h2>
 <input type="text" id="searchInput" placeholder="Type student name here...">
 <div id="suggestions"></div>
 
@@ -82,7 +82,7 @@
       <th>Gender</th>
       <th>Father Name</th>
       <th>Domicile</th>
-      <th>Category</th>
+      <th>Region</th>
     </tr>
   </thead>
   <tbody id="tableBody"></tbody>
@@ -97,8 +97,8 @@ fetch('data.csv')
   .then(text => {
     const lines = text.trim().split('\n');
     for (let i = 1; i < lines.length; i++) {
-      const [serial, name, gender, fatherName, domicile, category] = lines[i].split(',');
-      data.push({ serial, name, gender, fatherName, domicile, category });
+      const [serial, name, gender, fatherName, domicile, region] = lines[i].split(',');
+      data.push({ serial, name, gender, fatherName, domicile, region });
     }
   });
 
@@ -134,7 +134,7 @@ function showRecord(item) {
       <td>${item.gender}</td>
       <td>${item.fatherName}</td>
       <td>${item.domicile}</td>
-      <td>${item.category}</td>
+      <td>${item.region}</td>
     </tr>`;
   table.style.display = 'table';
 }
