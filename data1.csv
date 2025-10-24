@@ -1,6 +1,6 @@
 S.No.,Name ,Gender,Father Name,Domicile,Category
 1.     ,Awais Khan,Male,Taj-ul-Akbar,Mardan,"“KPK, Matric”"
-2.     ,Muqaddar Hussain,Male,Rahman Hussain,Peshawar,"“KPK, Matric”"
+2.     ,Muqaddar Hussain,Male,Rahman Hussain,Peshawar,"“KPK, Matric””
 3.     ,Qasim Shehzad,Male,Khalid Khan,Peshawar,"“KPK, Matric”"
 4.     ,Muhammad Huzaifa,Male,Muhammad Arif Khan,Mardan,"“KPK, Matric”"
 5.     ,Ahmad Hassan,Male,Mir Hassan,Mardan,"“KPK, Matric”"
@@ -131,4 +131,5 @@ S.No.,Name ,Gender,Father Name,Domicile,Category
 130.   ,Muhammad Abbas ,Male,Khan Bahadar,Khar Bajaur,"“FATA, Intermediate”"
 131.   ,Irshad Khan,Male,Mirmat Khan,Jamrud Khyber,"“FATA, Master”"
 132.   ,Ulfat Zahra,Female,Mir Asghar,Kurrum,"“FATA, Master”"
+
 
