@@ -1,135 +1,133 @@
 S.No.,Name,Gender,Father Name,Domicile,Region
-1,Awais Khan,Male,Taj-ul-Akbar,Mardan,"KPK, Matric"
-2,Muqaddar Hussain,Male,Rahman Hussain,Peshawar,"KPK, Matric"
-3,Qasim Shehzad,Male,Khalid Khan,Peshawar,"KPK, Matric"
-4,Muhammad Huzaifa,Male,Muhammad Arif Khan,Mardan,"KPK, Matric"
-5,Ahmad Hassan,Male,Mir Hassan,Mardan,"KPK, Matric"
-6,Yaqoob Khan,Male,Mohmand,Mardan,"KPK, Matric"
-7,Muhammad Ijaz,Male,Faiz Talib,Mardan,"KPK, Matric"
-8,Yasir Khan,Male,Ahmad Ali Shah,Lakki Marwat,"KPK, Matric"
-9,Farhad Khan,Male,Maqbool Rahman,Malakand,"KPK, Matric"
-10,Ziad Ullah,Male,Zakir Ullah,Mardan,"KPK, Matric"
-11,Syed Muhammad Hilal,Male,Syed Zahir Shah,"Tangi, Charsadda","KPK, Matric"
-12,Umar Shayan,Male,Said Badshah,Topi Swabi,"KPK, Matric"
-13,Muhammad Altaf,Male,Muhammad Zahid,Malakand,"KPK, Matric"
-14,Mahnoor Bibi,Female,Atta Ullah,Charsadda,"KPK, Matric"
-15,Muhammad Talha,Male,Akbar Ali,Mardan,"KPK, Matric"
-16,Bushra Bibi,Female,Fazli Subhan,Malakand,"KPK, Matric"
-17,Wasi Ullah,Male,Fazli Rabbi Khan,Shangla,"KPK, Matric"
-18,Abdullah,Male,Iqbal Mahmood,Shangla,"KPK, Matric"
-19,Hazrat Habib,Male,Faiz Ullah,Peshawar,"KPK, Matric"
-20,Muhammad Maaz,Male,Amin Shah,Charsadda,"KPK, Matric"
-21,Laiba Hoor,Female,Kayyum Nawaz,Tank,"KPK, Matric"
-22,Maaz Ullah,Male,Dawa Khan,Shangla,"KPK, Matric"
-23,Adil Ahmad,Male,Khurshid Habib,Peshawar,"KPK, Matric"
-24,Asma Gul,Female,Alam Sher,Charsadda,"KPK, Matric"
-25,Mushtaq Ahmad,Male,Muhammad Rahid,Peshawar,"KPK, Matric"
-26,Awais Ullah,Male,Akbar Hussain,Dir Upper,"KPK, Matric"
-27,Sumbal Shaheen Shahbaz,Female,Shahbaz Khan,Peshawar,"KPK, Matric"
-28,Gulalay Irfan,Female,Irfan Ullah,Charsadda,"KPK, Matric"
-29,Abdul Majeed,Male,Haji Abdul Jabbar,Mardan,"KPK, Matric"
-30,Muskan,Female,Shahid Ullah,Charsadda,"KPK, Matric"
-31,Husna,Female,Ikram Ullah,Charsadda,"KPK, Matric"
-32,Muhammad Wasim,Male,Rehmat Ullah,Lakki Marwat,"KPK, Matric"
-33,Shabeer Ahmad,Male,Abdul Hameed,Swabi,"KPK, Matric"
-34,Namro,Female,Farman Ullah,Charsadda,"KPK, Matric"
-35,Mehwish Sharif,Female,Muhammad Sharif,Peshawar,"KPK, Matric"
-36,Asif ur Rehman,Male,Abdur Rehman,Lakki Marwat,"KPK, Matric"
-37,Atif Ullah,Male,Khan Muhammad,Shangla,"KPK, Matric"
-38,Shayan Ahmad,Male,Alif Gul,Batkhela Malakand,"KPK, Matric"
-39,Muhammad Hilal Siddiqi,Male,Muhammad Numan,Shangla,"KPK, Matric"
-40,Danyal Raza,Male,Raza Muhammad,Karak,"KPK, Matric"
-41,Javeria,Female,Khalid Jan,Charsadda,"KPK, Matric"
-42,Laila Tul Qadar,Female,Muhammad Ishaq,Lakki Marwat,"KPK, Matric"
-43,Sana Bibi,Female,Rahmat Ali,Charsadda,"KPK, Matric"
-44,Sumayya Bibi,Female,Hidayat Ullah,Dargai Charsadda,"KPK, Matric"
-45,Sunaina Kanwal,Female,Sabaz Ali Khan,Lakki Marwat,"KPK, Matric"
-46,Abdullah,Male,Bahadar Zaman,Lakki Marwat,"KPK, Matric"
-47,Asma Bibi,Female,Imran Khan,Charsadda,"KPK, Matric"
-48,Maryam,Female,Abdul Qadoos,Lakki Marwat,"KPK, Matric"
-49,Zakir Ullah,Male,Zafar Khan,Chitral Lower,"KPK, Intermediate"
-50,Muhammad Ijaz,Male,Ayaz Khan,Peshawar,"KPK, Intermediate"
-51,Shandana Noor,Female,Shah Khalid Khan,Swabi,"KPK, Intermediate"
-52,Ayesha Kanwal,Female,Muhammad Imran,Swabi,"KPK, Intermediate"
-53,Hira Saleem,Female,Saleem Khan,Swabi,"KPK, Intermediate"
-54,Arooba Bint Khalid,Female,Khalid Akbar,Karak,"KPK, Intermediate"
-55,Sania Shahid,Female,Shahid Anwar,Swabi,"KPK, Intermediate"
-56,Aleena Bint Khalid,Female,Khalid Akbar,Karak,"KPK, Intermediate"
-57,Zulkifal Shah,Male,Abdul Khaliq,Tank,"KPK, Intermediate"
-58,Husna Tariq,Female,Tariq Ahmad,Peshawar,"KPK, Intermediate"
-59,Romaisa Wadood,Female,Abdul Wadood Khan,Mardan,"KPK, Intermediate"
-60,Aqsa Ghani,Female,Ghani ur Rahman,Mardan,"KPK, Intermediate"
-61,Nayab,Female,Altaf Khan,Peshawar,"KPK, Intermediate"
-62,Bareera Afzal,Female,Muhammad Afzal,Upper Chitral,"KPK, Intermediate"
-63,Sana Gul,Female,Jehangir Shah,Mardan,"KPK, Intermediate"
-64,Taimur Khan,Male,Amal Jan,Peshawar,"KPK, Intermediate"
-65,Warisha Iman,Female,Muhammad Salim,Lakki Marwat,"KPK, Intermediate"
-66,Nisha Gul,Female,Muhammad Ikram,Charsadda,"KPK, Intermediate"
-67,Liaba Imran,Female,Imran Ahmad Shah,Bannu,"KPK, Intermediate"
-68,Javeria Sajjad,Female,Sajjad Anwar,Swabi,"KPK, Intermediate"
-69,Nayab Khan,Female,Naseer Khan,Charsadda,"KPK, Intermediate"
-70,Haleema Bibi,Female,Sayed Badshah,Lakki Marwat,"KPK, Intermediate"
-71,Fawad Ahmad,Male,Yad Muhammad Khan,Peshawar,"KPK, Intermediate"
-72,Najma,Female,Siraj Khan,Charsadda,"KPK, Intermediate"
-73,Hammad Ahmad,Male,Molvi Fazil,Upper Chitral,"KPK, Intermediate"
-74,Sumaya Bibi,Female,Obaid Ullah Jan,Lakki Marwat,"KPK, Intermediate"
-75,Sumayya Bibi,Female,Muhammad Israr,Mardan,"KPK, Intermediate"
-76,Shumaila Yousaf,Female,Yousaf Khan,Swabi,"KPK, Intermediate"
-77,Afsheen Hassan,Female,Hasan Khan,Charsadda,"KPK, Intermediate"
-78,Aneeqa Wisal,Female,Wisal Muhammad,Swabi,"KPK, Intermediate"
-79,Uzma Bibi,Female,Alif Gul,Batkhela Malakand,"KPK, Intermediate"
-80,Aleena Arzoo,Female,Hidayat ur Rahman,Razar Swabi,"KPK, Intermediate"
-81,Muzakir Khan,Male,Alamgir,Bajaur,"FATA, Matric"
-82,Zia Ullah,Male,Musa Khan,"Mamund, Bajaur","FATA, Matric"
-83,Jamshid Khan,Male,Mir Azam,"Khar, Bajaur","FATA, Matric"
-84,Zakia Fatima,Female,Muhammad Azam,"Salarzai, Bajaur","FATA, Matric"
-85,Sadaqat Ali,Male,Zahir Shah,"Mamund, Bajaur","FATA, Matric"
-86,Umar Hayat,Male,Muhammad Hassan,Bajaur,"FATA, Matric"
-87,Shafi Ullah,Male,Saeed Gul,"Mamund, Bajaur","FATA, Matric"
-88,Zakir Ullah,Male,Taj Wali,Mohmand,"FATA, Matric"
-89,Haroon Rasheed,Male,Darwish Khan,Bajaur,"FATA, Matric"
-90,Muhammad Ayub,Male,Shah Faisal,Bajaur,"FATA, Matric"
-91,Bilal Kalim,Male,Kalim Ullah,Bajaur,"FATA, Matric"
-92,Irfan Ullah,Male,Fazal Rabi,Bajaur,"FATA, Matric"
-93,Awais Khan,Male,Wali Khan,Bajaur,"FATA, Matric"
-94,Bilal Khan,Male,Abdur Rashid,Dir Upper,"FATA, Matric"
-95,Salah Uddin,Male,Noor Zada,"Nawagai, Bajaur","FATA, Matric"
-96,Muhammad Irshad,Male,Liaqat Ali Khan,"Khar, Bajaur","FATA, Matric"
-97,Muhammad Adil,Male,Taj Ullah,Bajaur,"FATA, Matric"
-98,Nizam Uddin,Male,Nowsherawan,Bajaur,"FATA, Matric"
-99,Ashraf Khan,Male,Yahya Khan,Mohmand,"FATA, Matric"
-100,Abdullah,Male,Gul Rahman,Bajaur,"FATA, Matric"
-101,Abbas Khan,Male,Ghulam Muhammad,"Kosar Stop, Khar Bajaur","FATA, Matric"
-102,Fazl Wahab,Male,Muqaddar Khan,"Khar, Bajaur","FATA, Matric"
-103,Muhammad Umar,Male,Yousaf Khan,Bajaur,"FATA, Matric"
-104,Suliman Khan,Male,Gul Zamin,"Mamund, Bajaur","FATA, Matric"
-105,Abu Bakkar Shehzad,Male,Abdur Rahman,"Khar, Bajaur","FATA, Matric"
-106,Usman Khan,Male,Said Muhammad,"Mamund, Bajaur","FATA, Matric"
-107,Tamanna Khan,Female,Muhammad Ayaz,"Utman Khel, Bajaur","FATA, Matric"
-108,Ibrar Ullah,Male,Umar Muhammad,Bajaur,"FATA, Matric"
-109,Zeenat Ullah,Male,Zor Talab Khan,"Salarzai, Bajaur","FATA, Matric"
-110,Saad Ullah,Male,Muhammad Akbar,Upper Mohmand,"FATA, Matric"
-111,Naseer Ahmad,Male,Sher Zaman Khan,"Salarzai, Bajaur","FATA, Intermediate"
-112,Sohail Ahmad,Male,Fazal Ahmad,"Salarzai, Bajaur","FATA, Intermediate"
-113,Aurang Zeb,Male,Musafar Khan,"Loi Mamund, Bajaur","FATA, Intermediate"
-114,Muhib Ullah,Male,Muhammad Ismail Khan,"Salarzai, Bajaur","FATA, Intermediate"
-115,Iqra Farhat,Female,Farhat Ullah,Mohmand,"FATA, Intermediate"
-116,Muhammad Adnan,Male,Suleman,"Salarzai, Bajaur","FATA, Intermediate"
-117,Murad Ahmad,Male,Muhammad ur Rahman,"Khar, Bajaur","FATA, Intermediate"
-118,Abid Ullah,Male,Abdur Razzaq,Bajaur,"FATA, Intermediate"
-119,Ameer Muavia,Male,Atta ur Rahman,"Salarzai, Bajaur","FATA, Intermediate"
-120,Shahid Ullah,Male,Niaz Wali Khan,"Salarzai, Bajaur","FATA, Intermediate"
-121,Rooh Ullah,Male,Itbar Khan,Bajaur,"FATA, Intermediate"
-122,Alishba Zaman,Female,Zaman Khan,"Bara, Khyber","FATA, Intermediate"
-123,Burhan Ullah,Male,Salim Khan,"Brang, Bajaur","FATA, Intermediate"
-124,Tuba Jehangir,Female,Jehangir Khan,Mohmand,"FATA, Intermediate"
-125,Asad Ullah,Male,Sher Wali Khan,"Adam Khel, Mohmand","FATA, Intermediate"
-126,Younus Khan,Male,Akbar Shah,"Safi, Mohmand","FATA, Intermediate"
-127,Mudassir Ahmad Khan,Male,Taj Munir Khan,"Haleemzai, Mohmand","FATA, Intermediate"
-128,Ubaid Ullah,Male,Muhammad Nazir,"Khar, Bajaur","FATA, Intermediate"
-129,Muhammad Abbas,Male,Fazal Ahim,"Salarzai, Bajaur","FATA, Intermediate"
-130,Muhammad Abbas,Male,Khan Bahadar,"Khar, Bajaur","FATA, Intermediate"
-131,Irshad Khan,Male,Mirmat Khan,"Jamrud, Khyber","FATA, Master"
+1,Awais Khan,Male,Taj-ul-Akbar,Mardan,KPK (Matric)
+2,Muqaddar Hussain,Male,Rahman Hussain,Peshawar,KPK (Matric)
+3,Qasim Shehzad,Male,Khalid Khan,Peshawar,KPK (Matric)
+4,Muhammad Huzaifa,Male,Muhammad Arif Khan,Mardan,KPK (Matric)
+5,Ahmad Hassan,Male,Mir Hassan,Mardan,KPK (Matric)
+6,Yaqoob Khan,Male,Mohmand,Mardan,KPK (Matric)
+7,Muhammad Ijaz,Male,Faiz Talib,Mardan,KPK (Matric)
+8,Yasir Khan,Male,Ahmad Ali Shah,Lakki Marwat,KPK (Matric)
+9,Farhad Khan,Male,Maqbool Rahman,Malakand,KPK (Matric)
+10,Ziad Ullah,Male,Zakir Ullah,Mardan,KPK (Matric)
+11,Syed Muhammad Hilal,Male,Syed Zahir Shah,Tangi, Charsadda,KPK (Matric)
+12,Umar Shayan,Male,Said Badshah,Topi Swabi,KPK (Matric)
+13,Muhammad Altaf,Male,Muhammad Zahid,Malakand,KPK (Matric)
+14,Mahnoor Bibi,Female,Atta Ullah,Charsadda,KPK (Matric)
+15,Muhammad Talha,Male,Akbar Ali,Mardan,KPK (Matric)
+16,Bushra Bibi,Female,Fazli Subhan,Malakand,KPK (Matric)
+17,Wasi Ullah,Male,Fazli Rabbi Khan,Shangla,KPK (Matric)
+18,Abdullah,Male,Iqbal Mahmood,Shangla,KPK (Matric)
+19,Hazrat Habib,Male,Faiz Ullah,Peshawar,KPK (Matric)
+20,Muhammad Maaz,Male,Amin Shah,Charsadda,KPK (Matric)
+21,Laiba Hoor,Female,Kayyum Nawaz,Tank,KPK (Matric)
+22,Maaz Ullah,Male,Dawa Khan,Shangla,KPK (Matric)
+23,Adil Ahmad,Male,Khurshid Habib,Peshawar,KPK (Matric)
+24,Asma Gul,Female,Alam Sher,Charsadda,KPK (Matric)
+25,Mushtaq Ahmad,Male,Muhammad Rahid,Peshawar,KPK (Matric)
+26,Awais Ullah,Male,Akbar Hussain,Dir Upper,KPK (Matric)
+27,Sumbal Shaheen Shahbaz,Female,Shahbaz Khan,Peshawar,KPK (Matric)
+28,Gulalay Irfan,Female,Irfan Ullah,Charsadda,KPK (Matric)
+29,Abdul Majeed,Male,Haji Abdul Jabbar,Mardan,KPK (Matric)
+30,Muskan,Female,Shahid Ullah,Charsadda,KPK (Matric)
+31,Husna,Female,Ikram Ullah,Charsadda,KPK (Matric)
+32,Muhammad Wasim,Male,Rehmat Ullah,Lakki Marwat,KPK (Matric)
+33,Shabeer Ahmad,Male,Abdul Hameed,Swabi,KPK (Matric)
+34,Namro,Female,Farman Ullah,Charsadda,KPK (Matric)
+35,Mehwish Sharif,Female,Muhammad Sharif,Peshawar,KPK (Matric)
+36,Asif ur Rehman,Male,Abdur Rehman,Lakki Marwat,KPK (Matric)
+37,Atif Ullah,Male,Khan Muhammad,Shangla,KPK (Matric)
+38,Shayan Ahmad,Male,Alif Gul,Batkhela Malakand,KPK (Matric)
+39,Muhammad Hilal Siddiqi,Male,Muhammad Numan,Shangla,KPK (Matric)
+40,Danyal Raza,Male,Raza Muhammad,Karak,KPK (Matric)
+41,Javeria,Female,Khalid Jan,Charsadda,KPK (Matric)
+42,Laila Tul Qadar,Female,Muhammad Ishaq,Lakki Marwat,KPK (Matric)
+43,Sana Bibi,Female,Rahmat Ali,Charsadda,KPK (Matric)
+44,Sumayya Bibi,Female,Hidayat Ullah,Dargai Charsadda,KPK (Matric)
+45,Sunaina Kanwal,Female,Sabaz Ali Khan,Lakki Marwat,KPK (Matric)
+46,Abdullah,Male,Bahadar Zaman,Lakki Marwat,KPK (Matric)
+47,Asma Bibi,Female,Imran Khan,Charsadda,KPK (Matric)
+48,Maryam,Female,Abdul Qadoos,Lakki Marwat,KPK (Matric)
+49,Zakir Ullah,Male,Zafar Khan,Chitral Lower,KPK (Intermediate)
+50,Muhammad Ijaz,Male,Ayaz Khan,Peshawar,KPK (Intermediate)
+51,Shandana Noor,Female,Shah Khalid Khan,Swabi,KPK (Intermediate)
+52,Ayesha Kanwal,Female,Muhammad Imran,Swabi,KPK (Intermediate)
+53,Hira Saleem,Female,Saleem Khan,Swabi,KPK (Intermediate)
+54,Arooba Bint Khalid,Female,Khalid Akbar,Karak,KPK (Intermediate)
+55,Sania Shahid,Female,Shahid Anwar,Swabi,KPK (Intermediate)
+56,Aleena Bint Khalid,Female,Khalid Akbar,Karak,KPK (Intermediate)
+57,Zulkifal Shah,Male,Abdul Khaliq,Tank,KPK (Intermediate)
+58,Husna Tariq,Female,Tariq Ahmad,Peshawar,KPK (Intermediate)
+59,Romaisa Wadood,Female,Abdul Wadood Khan,Mardan,KPK (Intermediate)
+60,Aqsa Ghani,Female,Ghani ur Rahman,Mardan,KPK (Intermediate)
+61,Nayab,Female,Altaf Khan,Peshawar,KPK (Intermediate)
+62,Bareera Afzal,Female,Muhammad Afzal,Upper Chitral,KPK (Intermediate)
+63,Sana Gul,Female,Jehangir Shah,Mardan,KPK (Intermediate)
+64,Taimur Khan,Male,Amal Jan,Peshawar,KPK (Intermediate)
+65,Warisha Iman,Female,Muhammad Salim,Lakki Marwat,KPK (Intermediate)
+66,Nisha Gul,Female,Muhammad Ikram,Charsadda,KPK (Intermediate)
+67,Liaba Imran,Female,Imran Ahmad Shah,Bannu,KPK (Intermediate)
+68,Javeria Sajjad,Female,Sajjad Anwar,Swabi,KPK (Intermediate)
+69,Nayab Khan,Female,Naseer Khan,Charsadda,KPK (Intermediate)
+70,Haleema Bibi,Female,Sayed Badshah,Lakki Marwat,KPK (Intermediate)
+71,Fawad Ahmad,Male,Yad Muhammad Khan,Peshawar,KPK (Intermediate)
+72,Najma,Female,Siraj Khan,Charsadda,KPK (Intermediate)
+73,Hammad Ahmad,Male,Molvi Fazil,Upper Chitral,KPK (Intermediate)
+74,Sumaya Bibi,Female,Obaid Ullah Jan,Lakki Marwat,KPK (Intermediate)
+75,Sumayya Bibi,Female,Muhammad Israr,Mardan,KPK (Intermediate)
+76,Shumaila Yousaf,Female,Yousaf Khan,Swabi,KPK (Intermediate)
+77,Afsheen Hassan,Female,Hasan Khan,Charsadda,KPK (Intermediate)
+78,Aneeqa Wisal,Female,Wisal Muhammad,Swabi,KPK (Intermediate)
+79,Uzma Bibi,Female,Alif Gul,Batkhela Malakand,KPK (Intermediate)
+80,Aleena Arzoo,Female,Hidayat ur Rahman,Razar Swabi,KPK (Intermediate)
+81,Muzakir Khan,Male,Alamgir,Bajaur,FATA (Matric)
+82,Zia Ullah,Male,Musa Khan,Mamund, Bajaur,FATA (Matric)
+83,Jamshid Khan,Male,Mir Azam,Khar, Bajaur,FATA (Matric)
+84,Zakia Fatima,Female,Muhammad Azam,Salarzai, Bajaur,FATA (Matric)
+85,Sadaqat Ali,Male,Zahir Shah,Mamund, Bajaur,FATA (Matric)
+86,Umar Hayat,Male,Muhammad Hassan,Bajaur,FATA (Matric)
+87,Shafi Ullah,Male,Saeed Gul,Mamund, Bajaur,FATA (Matric)
+88,Zakir Ullah,Male,Taj Wali,Mohmand,FATA (Matric)
+89,Haroon Rasheed,Male,Darwish Khan,Bajaur,FATA (Matric)
+90,Muhammad Ayub,Male,Shah Faisal,Bajaur,FATA (Matric)
+91,Bilal Kalim,Male,Kalim Ullah,Bajaur,FATA (Matric)
+92,Irfan Ullah,Male,Fazal Rabi,Bajaur,FATA (Matric)
+93,Awais Khan,Male,Wali Khan,Bajaur,FATA (Matric)
+94,Bilal Khan,Male,Abdur Rashid,Dir Upper,FATA (Matric)
+95,Salah Uddin,Male,Noor Zada,Nawagai, Bajaur,FATA (Matric)
+96,Muhammad Irshad,Male,Liaqat Ali Khan,Khar, Bajaur,FATA (Matric)
+97,Muhammad Adil,Male,Taj Ullah,Bajaur,FATA (Matric)
+98,Nizam Uddin,Male,Nowsherawan,Bajaur,FATA (Matric)
+99,Ashraf Khan,Male,Yahya Khan,Mohmand,FATA (Matric)
+100,Abdullah,Male,Gul Rahman,Bajaur,FATA (Matric)
+101,Abbas Khan,Male,Ghulam Muhammad,Kosar Stop, Khar Bajaur,FATA (Matric)
+102,Fazl Wahab,Male,Muqaddar Khan,Khar, Bajaur,FATA (Matric)
+103,Muhammad Umar,Male,Yousaf Khan,Bajaur,FATA (Matric)
+104,Suliman Khan,Male,Gul Zamin,Mamund, Bajaur,FATA (Matric)
+105,Abu Bakkar Shehzad,Male,Abdur Rahman,Khar, Bajaur,FATA (Matric)
+106,Usman Khan,Male,Said Muhammad,Mamund, Bajaur,FATA (Matric)
+107,Tamanna Khan,Female,Muhammad Ayaz,Utman Khel, Bajaur,FATA (Matric)
+108,Ibrar Ullah,Male,Umar Muhammad,Bajaur,FATA (Matric)
+109,Zeenat Ullah,Male,Zor Talab Khan,Salarzai, Bajaur,FATA (Matric)
+110,Saad Ullah,Male,Muhammad Akbar,Upper Mohmand,FATA (Matric)
+111,Naseer Ahmad,Male,Sher Zaman Khan,Salarzai, Bajaur,FATA (Intermediate)
+112,Sohail Ahmad,Male,Fazal Ahmad,Salarzai, Bajaur,FATA (Intermediate)
+113,Aurang Zeb,Male,Musafar Khan,Loi Mamund, Bajaur,FATA (Intermediate)
+114,Muhib Ullah,Male,Muhammad Ismail Khan,Salarzai, Bajaur,FATA (Intermediate)
+115,Iqra Farhat,Female,Farhat Ullah,Mohmand,FATA (Intermediate)
+116,Muhammad Adnan,Male,Suleman,Salarzai, Bajaur,FATA (Intermediate)
+117,Murad Ahmad,Male,Muhammad ur Rahman,Khar, Bajaur,FATA (Intermediate)
+118,Abid Ullah,Male,Abdur Razzaq,Bajaur,FATA (Intermediate)
+119,Ameer Muavia,Male,Atta ur Rahman,Salarzai, Bajaur,FATA (Intermediate)
+120,Shahid Ullah,Male,Niaz Wali Khan,Salarzai, Bajaur,FATA (Intermediate)
+121,Rooh Ullah,Male,Itbar Khan,Bajaur,FATA (Intermediate)
+122,Alishba Zaman,Female,Zaman Khan,Bara, Khyber,FATA (Intermediate)
+123,Burhan Ullah,Male,Salim Khan,Brang, Bajaur,FATA (Intermediate)
+124,Tuba Jehangir,Female,Jehangir Khan,Mohmand,FATA (Intermediate)
+125,Asad Ullah,Male,Sher Wali Khan,Adam Khel, Mohmand,FATA (Intermediate)
+126,Younus Khan,Male,Akbar Shah,Safi, Mohmand,FATA (Intermediate)
+127,Mudassir Ahmad Khan,Male,Taj Munir Khan,Haleemzai, Mohmand,FATA (Intermediate)
+128,Ubaid Ullah,Male,Muhammad Nazir,Khar, Bajaur,FATA (Intermediate)
+129,Muhammad Abbas,Male,Fazal Ahim,Salarzai, Bajaur,FATA (Intermediate)
+130,Muhammad Abbas,Male,Khan Bahadar,Khar, Bajaur,FATA (Intermediate)
+131,Irshad Khan,Male,Mirmat Khan,Jamrud, Khyber,FATA (Master)
 132,Ulfat Zahra,Female,Mir Asghar,Kurrum,FATA (Master)
-
-
