@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PEEF Requisite Record Finder</title>
+<style>
+  body {
+    font-family: Tahoma;
+    font-size: 13px;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    user-select: none;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4b0082;
+  }
+  input {
+    width: 50%;
+    padding: 8px;
+    margin: 0 auto 15px;
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+  }
+  th, td {
+    border: 1px solid #999;
+    padding: 6px;
+    text-align: center;
+  }
+
+  thead tr {
+    background: linear-gradient(to right, #512da8, #673ab7, #3f51b5);
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  tbody tr td {
+    background: #ffffff;
+  }
+
+  tr:hover td { background: #e7f1ff; }
+
+  #suggestions {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    z-index: 9999;
+    display: none;
+  }
+  #suggestions div {
+    padding: 6px;
+    cursor: pointer;
+  }
+  #suggestions div:hover {
+    background: #e7f1ff;
+  }
+</style>
+</head>
+<body oncontextmenu="return false">
+
+<h2>PEEF Eligible List for the Year 2024-25</h2>
+<input type="text" id="searchInput" placeholder="Type student name here...">
+<div id="suggestions"></div>
+
+<table id="dataTable">
+  <thead>
+    <tr>
+      <th>Serial No</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Father Name</th>
+      <th>Domicile</th>
+      <th>Category</th>
+      </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<script>
+let data = [];
+fetch('data1.csv')
+  .then(response => response.text())
+  .then(text => {
+    const lines = text.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+      const [serial, name, gender, father-name, domicile, category] = lines[i].split(',');
+      data.push({ serial, name, gender, father-name, domicile, category });
+    }
+  });
+
+const searchInput = document.getElementById('searchInput');
+const suggestions = document.getElementById('suggestions');
+const table = document.getElementById('dataTable');
+const tableBody = document.getElementById('tableBody');
+
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  suggestions.innerHTML = '';
+  if (!query) { suggestions.style.display = 'none'; return; }
+
+  const matches = data.filter(item => item.name && item.name.toLowerCase().includes(query));
+  if (matches.length === 0) { suggestions.style.display = 'none'; return; }
+
+  matches.slice(0, 8).forEach(item => {
+    const div = document.createElement('div');
+    div.textContent = item.name;
+    div.addEventListener('click', () => showRecord(item));
+    suggestions.appendChild(div);
+  });
+  suggestions.style.display = 'block';
+});
+
+function showRecord(item) {
+  suggestions.style.display = 'none';
+  searchInput.value = item.name;
+  tableBody.innerHTML = `
+    <tr>
+      <td>${item.serial}</td>
+      <td>${item.name}</td>
+      <td>${item.gender}</td>
+      <td>${item.father-name}</td>
+      <td>${item.domicile}</td>
+      <td>${item.category}</td>
+    </tr>`;
+  table.style.display = 'table';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'PrintScreen') {
+    alert('Screenshots are disabled on this page.');
+    e.preventDefault();
+  }
+});
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('selectstart', e => e.preventDefault());
+</script>
+
+</body>
+</html>
