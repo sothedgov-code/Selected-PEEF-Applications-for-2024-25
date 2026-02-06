@@ -4,74 +4,103 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PEEF Recommended Applications 2024</title>
+
 <style>
-  body {
-    font-family: Tahoma;
-    font-size: 13px;
-    background: #f2f2f2;
-    margin: 0;
-    padding: 20px;
-    user-select: none;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #4b0082;
-  }
-  input {
-    width: 50%;
-    padding: 8px;
-    margin: 0 auto 15px;
-    display: block;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    display: none;
-  }
-  th, td {
-    border: 1px solid #999;
-    padding: 6px;
-    text-align: center;
+  :root{
+    --bg:#e9edf3;
+    --light:#ffffff;
+    --dark:#cfd6e2;
+    --primary:#4a5bdc;
+    --text:#2f3445;
   }
 
-  thead tr {
-    background: linear-gradient(to right, #512da8, #673ab7, #3f51b5);
-    color: #ffffff;
-    font-weight: bold;
+  body{
+    font-family:"Segoe UI", Tahoma, sans-serif;
+    font-size:13px;
+    background:var(--bg);
+    margin:0;
+    padding:25px;
+    user-select:none;
+    color:var(--text);
   }
 
-  tbody tr td {
-    background: #ffffff;
+  h2{
+    text-align:center;
+    margin-bottom:18px;
+    color:var(--primary);
+    letter-spacing:.4px;
   }
 
-  tr:hover td { background: #e7f1ff; }
+  input{
+    width:50%;
+    padding:12px 14px;
+    margin:0 auto 20px;
+    display:block;
+    border:none;
+    border-radius:14px;
+    background:var(--bg);
+    outline:none;
+    box-shadow:
+      inset 4px 4px 8px var(--dark),
+      inset -4px -4px 8px var(--light);
+  }
 
-  #suggestions {
-    position: absolute;
-    width: 50%;
-    margin-left: 25%;
-    background: white;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    z-index: 9999;
-    display: none;
+  table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+    display:none;
+    background:var(--bg);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:
+      8px 8px 18px var(--dark),
+      -8px -8px 18px var(--light);
   }
-  #suggestions div {
-    padding: 6px;
-    cursor: pointer;
+
+  th, td{
+    padding:9px 6px;
+    text-align:center;
   }
-  #suggestions div:hover {
-    background: #e7f1ff;
+
+  th{
+    font-weight:600;
+    color:var(--primary);
+  }
+
+  tbody tr:hover td{
+    background:#eef1f8;
+  }
+
+  #suggestions{
+    position:absolute;
+    width:50%;
+    margin-left:25%;
+    background:var(--bg);
+    border-radius:14px;
+    display:none;
+    z-index:9999;
+    box-shadow:
+      8px 8px 18px var(--dark),
+      -8px -8px 18px var(--light);
+  }
+
+  #suggestions div{
+    padding:9px 12px;
+    cursor:pointer;
+  }
+
+  #suggestions div:hover{
+    background:#eef1f8;
   }
 </style>
 </head>
+
 <body oncontextmenu="return false">
 
-<h2>PEEF Recommended List for 2024</h2>
-<input type="text" id="searchInput" placeholder="Type student name here...">
+<h2>PEEF Recommended Students List for the year 2012–2020</h2>
+
+<input type="text" id="searchInput" placeholder="Type student name or father name here...">
 <div id="suggestions"></div>
 
 <table id="dataTable">
@@ -83,6 +112,7 @@
       <th>Father Name</th>
       <th>Domicile</th>
       <th>Region</th>
+      <th>Year</th>
     </tr>
   </thead>
   <tbody id="tableBody"></tbody>
@@ -91,14 +121,31 @@
 <script>
 let data = [];
 
-// Fetch and parse CSV
 fetch('data.csv')
   .then(response => response.text())
   .then(text => {
     const lines = text.trim().split('\n');
+
     for (let i = 1; i < lines.length; i++) {
-      const [serial, name, gender, fatherName, domicile, region] = lines[i].split(',');
-      data.push({ serial, name, gender, fatherName, domicile, region });
+      const [
+        serial,
+        name,
+        gender,
+        fatherName,
+        domicile,
+        region,
+        year
+      ] = lines[i].split(',').map(v => v.trim());
+
+      data.push({
+        serial,
+        name,
+        gender,
+        fatherName,
+        domicile,
+        region,
+        year
+      });
     }
   });
 
@@ -107,26 +154,41 @@ const suggestions = document.getElementById('suggestions');
 const table = document.getElementById('dataTable');
 const tableBody = document.getElementById('tableBody');
 
-searchInput.addEventListener('input', function() {
+searchInput.addEventListener('input', function () {
   const query = this.value.toLowerCase().trim();
   suggestions.innerHTML = '';
-  if (!query) { suggestions.style.display = 'none'; return; }
 
-  const matches = data.filter(item => item.name && item.name.toLowerCase().includes(query));
-  if (matches.length === 0) { suggestions.style.display = 'none'; return; }
+  if (!query) {
+    suggestions.style.display = 'none';
+    table.style.display = 'none';
+    return;
+  }
+
+  const matches = data.filter(item =>
+    item.name.toLowerCase().includes(query) ||
+    item.fatherName.toLowerCase().includes(query)
+  );
+
+  if (!matches.length) {
+    suggestions.style.display = 'none';
+    table.style.display = 'none';
+    return;
+  }
 
   matches.slice(0, 8).forEach(item => {
     const div = document.createElement('div');
-    div.textContent = item.name;
-    div.addEventListener('click', () => showRecord(item));
+    div.textContent = `${item.name} (Father: ${item.fatherName})`;
+    div.onclick = () => showRecord(item);
     suggestions.appendChild(div);
   });
+
   suggestions.style.display = 'block';
 });
 
 function showRecord(item) {
   suggestions.style.display = 'none';
   searchInput.value = item.name;
+
   tableBody.innerHTML = `
     <tr>
       <td>${item.serial}</td>
@@ -135,17 +197,13 @@ function showRecord(item) {
       <td>${item.fatherName}</td>
       <td>${item.domicile}</td>
       <td>${item.region}</td>
-    </tr>`;
+      <td>${item.year}</td>
+    </tr>
+  `;
+
   table.style.display = 'table';
 }
 
-// Disable PrintScreen, copy, and selection
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'PrintScreen') {
-    alert('Screenshots are disabled on this page.');
-    e.preventDefault();
-  }
-});
 document.addEventListener('copy', e => e.preventDefault());
 document.addEventListener('selectstart', e => e.preventDefault());
 </script>
