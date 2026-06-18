@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PEEF Recommended Applications 2024</title>
+<title>PEEF Recommended Applications for 2025</title>
 
 <style>
   :root{
@@ -93,12 +93,15 @@
   #suggestions div:hover{
     background:#eef1f8;
   }
+#suggestions div.active{
+  background:#dfe5f7;
+}
 </style>
 </head>
 
 <body oncontextmenu="return false">
 
-<h2>PEEF Recommended Students List for 2024</h2>
+<h2>PEEF Recommended Students for 2025</h2>
 
 <input type="text" id="searchInput" placeholder="Type student name or father name here...">
 <div id="suggestions"></div>
@@ -153,10 +156,13 @@ const searchInput = document.getElementById('searchInput');
 const suggestions = document.getElementById('suggestions');
 const table = document.getElementById('dataTable');
 const tableBody = document.getElementById('tableBody');
+let currentMatches = [];
+let selectedIndex = -1;
 
 searchInput.addEventListener('input', function () {
   const query = this.value.toLowerCase().trim();
   suggestions.innerHTML = '';
+  selectedIndex = -1;
 
   if (!query) {
     suggestions.style.display = 'none';
@@ -164,26 +170,81 @@ searchInput.addEventListener('input', function () {
     return;
   }
 
-  const matches = data.filter(item =>
-    item.name.toLowerCase().includes(query) ||
-    item.fatherName.toLowerCase().includes(query)
-  );
+  currentMatches = data.filter(item =>
+  item.name.toLowerCase().includes(query) ||
+  item.fatherName.toLowerCase().includes(query)
+).slice(0, 8);
 
-  if (!matches.length) {
+  if (!currentMatches.length) {
     suggestions.style.display = 'none';
     table.style.display = 'none';
     return;
   }
 
-  matches.slice(0, 8).forEach(item => {
+  currentMatches.forEach((item, index) => {
     const div = document.createElement('div');
     div.textContent = `${item.name} (Father: ${item.fatherName})`;
+
     div.onclick = () => showRecord(item);
+
+    div.addEventListener('mouseenter', () => {
+      removeActive();
+      selectedIndex = index;
+      div.classList.add('active');
+    });
+
     suggestions.appendChild(div);
   });
 
   suggestions.style.display = 'block';
+
+  selectedIndex = 0;
+  updateActive(suggestions.querySelectorAll('div'));
+
 });
+
+
+searchInput.addEventListener('keydown', function(e){
+
+  const items = suggestions.querySelectorAll('div');
+
+  if (!items.length) return;
+
+  switch(e.key){
+
+    case 'ArrowDown':
+      e.preventDefault();
+      selectedIndex = (selectedIndex + 1) % items.length;
+      updateActive(items);
+      break;
+
+    case 'ArrowUp':
+      e.preventDefault();
+      selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+      updateActive(items);
+      break;
+
+    case 'Enter':
+      e.preventDefault();
+      if(selectedIndex >= 0){
+        showRecord(currentMatches[selectedIndex]);
+      }
+      break;
+  }
+});
+  
+function updateActive(items){
+  removeActive();
+
+  if (selectedIndex >= 0 && items[selectedIndex]) {
+    items[selectedIndex].classList.add('active');
+  }
+}
+
+function removeActive(){
+  const items = suggestions.querySelectorAll('div');
+  items.forEach(item => item.classList.remove('active'));
+}
 
 function showRecord(item) {
   suggestions.style.display = 'none';
